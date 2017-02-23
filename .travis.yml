@@ -2,3 +2,11 @@ language: go
 
 script:
  - go test -v
+ 
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key: $TOKEN
+  on:
+    tags: true
+    go: '1.7'
