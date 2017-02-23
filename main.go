@@ -19,7 +19,10 @@ func main() {
 		case "-":
 			fmt.Print(i - k)
 			return
+		case "*":
+			fmt.Print(i * k)
+			return
 		}
 	}
-	fmt.Print("使い方:<a> <+/-> <b>")
+	fmt.Print("使い方:<a> <+ or - or *> <b>")
 }
